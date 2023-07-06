@@ -60,7 +60,7 @@ const ListOptions = [
 function LayoutDashboard({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   return (
-    <Grid container className="" spacing={5}>
+    <Grid container className="" spacing={2}>
       <Grid item className="bg-blue-500 rounded-xl h-screen relative " xs={3}>
         <div className="h-5/6">
           <List>
@@ -113,6 +113,8 @@ function LayoutDashboard({ children }: { children: React.ReactNode }) {
               }
             />
           </ListItem>
+
+          <div></div>
         </div>
       </Grid>
 
