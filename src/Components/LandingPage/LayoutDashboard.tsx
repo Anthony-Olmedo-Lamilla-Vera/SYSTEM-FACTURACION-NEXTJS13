@@ -24,6 +24,7 @@ import AttachMoneyOutlinedIcon from "@mui/icons-material/AttachMoneyOutlined";
 import MoneyOffCsredOutlinedIcon from "@mui/icons-material/MoneyOffCsredOutlined";
 import { useRouter } from "next/navigation";
 import DoorFrontOutlinedIcon from "@mui/icons-material/DoorFrontOutlined";
+import Newsletter from "../Dashboard/NewsLetterPage";
 const ListOptions = [
   {
     name: "Dashboard",
@@ -61,7 +62,7 @@ function LayoutDashboard({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   return (
     <Grid container className="" spacing={2}>
-      <Grid item className="bg-blue-500 rounded-xl h-screen relative " xs={3}>
+      <Grid item className="bg-blue-700 rounded-xl h-screen relative " xs={3}>
         <div className="h-5/6">
           <List>
             {ListOptions.map((item) => (
@@ -83,7 +84,9 @@ function LayoutDashboard({ children }: { children: React.ReactNode }) {
               </>
             ))}
           </List>
+          <Newsletter />
         </div>
+
         <div className="bg-black h-1/5">
           <ListItem
             alignItems="flex-start"
